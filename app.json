@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/pearl/pearl",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f17c67",
+    "navigationBarTitleText": "零露珍珠",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "产品",
+      "iconPath": "images/footer-icon/home.png",
+      "selectedIconPath": "images/footer-icon/home_focus.png"
+    },{
+      "pagePath": "pages/pearl/pearl",
+      "text": "珍珠知识",
+      "iconPath": "images/footer-icon/pearl.png",
+      "selectedIconPath": "images/footer-icon/cart_focus.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "关于我们",
+      "iconPath": "images/footer-icon/mine.png",
+      "selectedIconPath": "images/footer-icon/mine_focus.png"
+    }]
+  }
+}
