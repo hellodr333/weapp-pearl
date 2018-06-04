@@ -1,0 +1,126 @@
+.img {
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+}
+.text-center {
+  text-align: center;
+}
+/*search  */
+.search-ipt {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  margin-left: -90px;
+  background: white;
+  opacity: 0.7;
+  width: 206px;
+  border-radius: 3%;
+}
+.search-ipt icon {
+  margin-left: 5px;
+}
+.search-ipt input {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 5px;
+  width: 180px;
+  margin-top: 4px;
+}
+/* swiper-tab*/
+.swiper-tab{  
+    width: 100%;  
+    background: #bbb; 
+    text-align: center;  
+    line-height: 100rpx;
+    height: 100rpx;
+}  
+.swiper-tab-list{ 
+    font-size: 30rpx;  
+    display: inline-block;  
+    width: 33.33%;  
+    color: #fff;  
+    height: 100rpx;
+    line-height: 50rpx;
+}  
+.swiper-cont {
+  white-space: no-wrap;
+  display: flex;
+  background: #eee;
+  height: 240px;
+}
+.swiper-cont-list {
+  background: #eee;
+  height: 240px;
+  margin: 6px 0px 6px 6px;
+}
+.swiper-cont-list image {
+  width: 120px;
+  height: 120px;
+}
+ .swiper-cont-list text {
+  font-size: 12px;
+  display: block;
+} 
+text.float-l {
+  color: red !important;
+  font-size: 16px !important;
+  margin-right: 6px !important;
+  display: inline-block !important;
+}
+text.float-r {
+  color: #bbb;
+  font-size: 13px !important;
+  display: inline-block !important;
+}
+.on { 
+    background: #666;
+}  
+.swiper-box{ 
+   display: block; 
+   height: 100%; 
+   width: 100%; 
+   overflow: hidden; 
+}  
+.swiper-box view{  
+    text-align: center;  
+}  
+.ft30 {
+  font-size: 30rpx;
+}
+.show-box {
+  opacity: inline-block;
+}
+.hide-box {
+  display: none;
+}
+/*today-discount  */
+.today-discount {
+  height: 30px;
+  padding-top: 10px;
+}
+.today-discount-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.today-discount-cont-list {
+  width: 50%;
+  height: 300px;
+}
+.today-discount-cont-list image {
+  width: 180px;
+  height: 180px;
+}
+ .today-discount-cont-list text {
+  font-size: 14px;
+  display: block;
+} 
+ .swiper-cont-list text.discount-label, .today-discount-cont-list text.discount-label {
+  font-size: 12px;
+  color: #fff;
+  background: red;
+  padding: 3px;
+  display: inline-block;
+  margin-left: 8px;
+}

@@ -1,0 +1,17 @@
+<view style="border-bottom: 2px solid #bbb;height: 20px;margin: 0 6px;">
+</view>
+<view style="text-align: center;margin-top:-14px;">
+   <text style="display: inline-block;background: #fff;padding: 0 4px;font-size: 16px;">珍珠种类和分布</text>
+</view>
+<view style="display: flex;margin: 0 0 0 6px;flex-direction: row;flex-wrap: wrap;">
+  <block wx:for="{{pearls}}" wx:key="key">
+    <view style="width: 48%;margin:6px 6px 6px 0;">
+      <view style="overflow: hidden;width: 100%;">
+        <image src="{{item.iconSrc}}" style="width:30px;height:30px;float: left;margin-right: 4px;"/>
+        <text style="float: left;padding-top: 8px;">{{item.title}}</text>
+      </view>
+      <view style="font-size: 12px;padding: 2px;line-height: 14px;height: 110px;">{{item.body}}</view>
+      <image src="{{item.imgSrc}}" style="width: 100%;" mode="widthFix"/>
+    </view>
+  </block>
+</view>

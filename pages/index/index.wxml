@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view style="position: relative;">
+  <swiper indicator-dots="true"
+    autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image img"  mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="search-ipt">
+    <icon type="search" size="20"/>
+    <input type="text" auto-focus/> 
+  </view>
+</view>
+<view class="text-center ft30">限时抢购</view>
+<view class="text-center ft30">每天上午10点周末vip提前抢</view>
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}"><text data-current="0" bindtap="swichNav"></text></view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}"><text data-current="1" bindtap="swichNav">5月3日 10:00  \n即将开始</text></view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}"><text data-current="2" bindtap="swichNav">5月4日 10:00  \n即将开始</text></view>  
+</view>  
+<scroll-view scroll-x="true" class="swiper-cont">
+  <view class="{{currentTab==0 ? 'show-box' : 'hide-box'}}">
+    <view style="display: flex;">
+      <block wx:for="{{panicBuy}}" wx:key="key">
+        <view class="swiper-cont-list">
+          <image src="{{item.img}}"/>
+          <text>{{item.mainTitle}}</text>
+          <text>{{item.subTitle}}</text>
+          <text>
+            <text class="float-l">{{item.discounted}}</text>
+            <text class="float-r">{{item.primePrice}}</text>
+          </text>
+          <view>
+            <text class="discount-label" wx:if="{{item.showDiscount}}">限时特惠</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view style="width: 400px; height: 300px;" class="{{currentTab==1 ? 'show-box' : 'hide-box'}}">ddddddd</view>
+  <view style="width: 400px; height: 300px;" class="{{currentTab==2 ? 'show-box' : 'hide-box'}}">ffffffffff</view>
+</scroll-view>
+<view class="text-center ft30 today-discount">今日特惠</view>
+<view class="today-discount-cont">
+  <block wx:for="{{todayDiscouts}}" wx:key="key">
+    <view class="today-discount-cont-list">
+      <view style="text-align: center;"><image src="{{item.img}}" /></view>
+      <text>{{item.mainTitle}}</text>
+      <text>{{item.subTitle}}</text>
+      <text>
+        <text class="float-l">{{item.discounted}}</text>
+        <text class="float-r">{{item.primePrice}}</text>
+     </text>
+     <view>
+        <text class="discount-label" wx:if="{{item.showDiscount}}">限时特惠</text>
+      </view>
+    </view>
+  </block>
+</view>
