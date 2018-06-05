@@ -1,14 +1,14 @@
 # weapp-pearl
 一个用于展示商品的购物商城类似的 微信小程序 初级简单产品<br/>
-![Image text](https://github.com/hellodr333/images/blob/master/pearl-store/index.png)<br/>
+![这里应该展示的是首页图片](https://github.com/hellodr333/images/blob/master/pearl-store/index.png)<br/>
 
 首页展示banner/特惠商品/主要产品
 
-![Image text](https://github.com/hellodr333/images/blob/master/pearl-store/product.png)<br/>
+![这里应该展示的是珍珠知识](https://github.com/hellodr333/images/blob/master/pearl-store/product.png)<br/>
 
 产品页介绍珍珠知识及保养珍珠知识
 
-![Image text](https://github.com/hellodr333/images/blob/master/pearl-store/contact.png)<br/>
+![这里应该展示的是公司信息及其他](https://github.com/hellodr333/images/blob/master/pearl-store/contact.png)<br/>
 
 联系页展示公司及联系信息
 
