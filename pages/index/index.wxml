@@ -8,22 +8,21 @@
       </swiper-item>
     </block>
   </swiper>
-  <view class="search-ipt">
+  <!-- <view class="search-ipt">
     <icon type="search" size="20"/>
     <input type="text" auto-focus/> 
-  </view>
+  </view> -->
 </view>
-<view class="text-center ft30">限时抢购</view>
-<view class="text-center ft30">每天上午10点周末vip提前抢</view>
+<view class="text-center ft30" style="height: 30px;line-height: 30px;">分类精品</view>
 <view class="swiper-tab">  
-    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}"><text data-current="0" bindtap="swichNav"></text></view>  
-    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}"><text data-current="1" bindtap="swichNav">5月3日 10:00  \n即将开始</text></view>  
-    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}"><text data-current="2" bindtap="swichNav">5月4日 10:00  \n即将开始</text></view>  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}"><text data-current="0" bindtap="swichNav">项链</text></view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}"><text data-current="1" bindtap="swichNav">耳饰</text></view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}"><text data-current="2" bindtap="swichNav">手链</text></view>  
 </view>  
 <scroll-view scroll-x="true" class="swiper-cont">
   <view class="{{currentTab==0 ? 'show-box' : 'hide-box'}}">
     <view style="display: flex;">
-      <block wx:for="{{panicBuy}}" wx:key="key">
+      <block wx:for="{{necklaces}}" wx:key="key">
         <view class="swiper-cont-list">
           <image src="{{item.img}}"/>
           <text>{{item.mainTitle}}</text>
@@ -39,8 +38,42 @@
       </block>
     </view>
   </view>
-  <view style="width: 400px; height: 300px;" class="{{currentTab==1 ? 'show-box' : 'hide-box'}}">ddddddd</view>
-  <view style="width: 400px; height: 300px;" class="{{currentTab==2 ? 'show-box' : 'hide-box'}}">ffffffffff</view>
+  <view class="{{currentTab==1 ? 'show-box' : 'hide-box'}}">
+    <view style="display: flex;">
+      <block wx:for="{{earrings}}" wx:key="key">
+        <view class="swiper-cont-list">
+          <image src="{{item.img}}"></image>
+          <text>{{item.mainTitle}}</text>
+          <text>{{item.subTitle}}</text>
+          <text>
+            <text class="float-l">{{item.discounted}}</text>
+            <text class="float-r">{{item.primePrice}}</text>
+          </text>
+          <view>
+            <text class="discount-label" wx:if="{{item.showDiscount}}">限时特惠</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="{{currentTab==2 ? 'show-box' : 'hide-box'}}">
+    <view style="display: flex;">
+      <block wx:for="{{bracelets}}" wx:key="key">
+        <view class="swiper-cont-list">
+          <image src="{{item.img}}"></image>
+          <text>{{item.mainTitle}}</text>
+          <text>{{item.subTitle}}</text>
+          <text>
+            <text class="float-l">{{item.discounted}}</text>
+            <text class="float-r">{{item.primePrice}}</text>
+          </text>
+          <view>
+            <text class="discount-label" wx:if="{{item.showDiscount}}">限时特惠</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
 </scroll-view>
 <view class="text-center ft30 today-discount">今日特惠</view>
 <view class="today-discount-cont">

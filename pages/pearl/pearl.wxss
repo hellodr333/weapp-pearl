@@ -1,0 +1,54 @@
+.top-border {
+  border-bottom: 2px solid #bbb;
+  height: 20px;
+  margin: 0 6px;
+}
+.top-text-box {
+  text-align: center;
+  margin-top:-14px;
+}
+.top-text {
+  display: inline-block;
+  background: #fff;
+  padding: 0 4px;
+  font-size: 16px;
+}
+.detail-container {
+  display: flex;
+  margin: 0 0 0 6px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.detail-child {
+  width: 48%;
+  margin: 6px 6px 6px 0;
+}
+.detail-child-title {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 6px;
+}
+.detail-child-title image {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 4px;
+}
+.detail-child-title text {
+  float: left;
+  padding-top: 8px;
+}
+.detail-child-txt {
+  font-size: 12px;
+  padding: 2px;
+  line-height: 14px;
+  height: 110px;
+}
+.pearl-maintenance-contain {
+  padding: 10px 2px;
+}
+.pearl-maintenance {
+  display: block;
+  font-size: 12px;
+  margin: 4px 10px;
+}

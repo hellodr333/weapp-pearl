@@ -18,18 +18,18 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "产品",
-      "iconPath": "images/footer-icon/home.png",
-      "selectedIconPath": "images/footer-icon/home_focus.png"
+      "iconPath": "images/icon/home.png",
+      "selectedIconPath": "images/icon/home_focus.png"
     },{
       "pagePath": "pages/pearl/pearl",
       "text": "珍珠知识",
-      "iconPath": "images/footer-icon/pearl.png",
-      "selectedIconPath": "images/footer-icon/cart_focus.png"
+      "iconPath": "images/icon/pearl.png",
+      "selectedIconPath": "images/icon/pearl_focus.png"
     },{
       "pagePath": "pages/mine/mine",
       "text": "关于我们",
-      "iconPath": "images/footer-icon/mine.png",
-      "selectedIconPath": "images/footer-icon/mine_focus.png"
+      "iconPath": "images/icon/mine.png",
+      "selectedIconPath": "images/icon/mine_focus.png"
     }]
   }
 }

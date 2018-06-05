@@ -1,17 +1,40 @@
-<view style="border-bottom: 2px solid #bbb;height: 20px;margin: 0 6px;">
+<view class="top-border">
 </view>
-<view style="text-align: center;margin-top:-14px;">
-   <text style="display: inline-block;background: #fff;padding: 0 4px;font-size: 16px;">珍珠种类和分布</text>
+<view class="top-text-box">
+   <text class="top-text">珍珠种类和分布</text>
 </view>
-<view style="display: flex;margin: 0 0 0 6px;flex-direction: row;flex-wrap: wrap;">
+<view class="detail-container">
   <block wx:for="{{pearls}}" wx:key="key">
-    <view style="width: 48%;margin:6px 6px 6px 0;">
-      <view style="overflow: hidden;width: 100%;">
-        <image src="{{item.iconSrc}}" style="width:30px;height:30px;float: left;margin-right: 4px;"/>
-        <text style="float: left;padding-top: 8px;">{{item.title}}</text>
+    <view class="detail-child">
+      <view class="detail-child-title">
+        <image src="{{item.iconSrc}}"/>
+        <text>{{item.title}}</text>
       </view>
-      <view style="font-size: 12px;padding: 2px;line-height: 14px;height: 110px;">{{item.body}}</view>
+      <view class="detail-child-txt">{{item.body}}</view>
       <image src="{{item.imgSrc}}" style="width: 100%;" mode="widthFix"/>
     </view>
   </block>
+</view>
+<view class="pearl-maintenance-contain">
+  <view class="top-border">
+  </view>
+  <view class="top-text-box">
+    <text class="top-text">珍珠保养</text>
+  </view>
+  <view style="margin-bottom: 12px;">
+    <text class="pearl-maintenance">1、不近清水：不要用水清洁珍珠项链。水可以进入珠的小孔内，不仅难于抹干，可能还会令里面发酵，珠线也可能转为绿色。如穿戴时出了很多汗，可用软湿毛巾小心抹净，风干后保存。</text>
+    <view style="text-align:center"><image src="../../images/product/01.jpg" width="80%" height="80px;" mode="widthFix"></image></view>
+  </view>
+  <view style="margin-bottom: 12px;">
+    <text class="pearl-maintenance">2、远离厨房：珍珠表面有微小的气孔，所以不宜让它吸入空气中污浊物质。珍珠会吸收喷发胶、香水等物质。所以切勿穿戴漂亮的珍珠项链去电发，在厨房里也要小心。不要穿戴漂亮的珍珠煮菜，蒸汽和油烟都可以渗入珍珠，令它发黄。</text>
+    <view style="text-align:center"><image src="../../images/product/02.jpg" width="80%" mode="widthFix"></image></view>
+  </view>
+  <view style="margin-bottom: 12px;">
+    <text class="pearl-maintenance">3、需要空气：不要长期将珍珠项链放在保险箱内，也不要用胶袋密封。珍珠间需要新鲜空气，每隔数月便要拿出来佩戴，让它们呼吸。如长期放在箱中珍珠容易变黄。  </text>
+   <view style="text-align:center"><image src="../../images/product/03.jpg" width="80%" mode="widthFix"></image></view>
+  </view>
+  <view style="margin-bottom: 12px;">
+   <text class="pearl-maintenance">4、三年换线：珍珠项链最好每三年重新串一次。走进珠子小孔的污物会产生摩擦力，令尼龙线折断。</text>
+   <view style="text-align:center"><image src="../../images/product/04.jpg" width="80%" mode="widthFix"></image></view>
+  </view>
 </view>

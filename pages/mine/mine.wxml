@@ -9,3 +9,25 @@
     </block>
   </swiper>
 </view>
+<view class="contact-bar">
+  <view class="contact-bar-child" bindtap="joinUs">
+    <image src="../../images/icon/cooperate.png" style="width: 40%" mode="widthFix"></image>
+    <text style="display: block;">代理加盟</text>
+  </view>
+  <view class="contact-bar-child" bindtap="phoneCall" data-reply-phone="15601832659">
+    <image src="../../images/icon/contact.png" style="width: 40%" mode="widthFix"></image>
+    <text style="display: block;">联系我们</text>
+  </view>
+  <view class="contact-bar-child" bindtap="viewMore">
+    <image src="../../images/icon/detail.png" style="width: 40%" mode="widthFix"></image>
+    <text style="display: block;">更多商品</text>
+  </view>
+</view>
+<view class="scancode-bar">
+  <image src="../../images/mine/qr-code.jpg" mode="widthFix"></image>
+  <text>关注公众号惊喜多多</text>
+</view>
+<view class="scancode-bar">
+   <image src="../../images/mine/wechat.jpg" mode="widthFix"></image>
+   <text>加客服微信私聊有惊喜</text>
+</view>

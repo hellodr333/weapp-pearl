@@ -5,3 +5,26 @@
 .text-center {
   text-align: center;
 }
+.contact-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top:20px;
+}
+.contact-bar-child {
+  width: 33.3%;
+  text-align: center;
+}
+.scancode-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top:40px;
+}
+.scancode-bar image {
+  width: 50%;
+}
+.scancode-bar text {
+  display: block;
+  padding-top: 80px;
+}

@@ -41,7 +41,6 @@
     width: 33.33%;  
     color: #fff;  
     height: 100rpx;
-    line-height: 50rpx;
 }  
 .swiper-cont {
   white-space: no-wrap;
@@ -106,7 +105,7 @@ text.float-r {
 }
 .today-discount-cont-list {
   width: 50%;
-  height: 300px;
+  margin-bottom: 10px;
 }
 .today-discount-cont-list image {
   width: 180px;
